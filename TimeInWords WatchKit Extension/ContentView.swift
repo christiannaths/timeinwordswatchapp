@@ -79,19 +79,19 @@ class Helper {
             "two": [57, 58, 59],
             "three": [60, 61, 62, 63, 64],
             "four": [80, 81, 82, 83],
-            "five": [66, 67, 68, 69],
+            "five": [76, 77, 78, 79],
             "six": [37, 38, 39],
             "seven": [40, 41, 42, 43, 44],
-            "eight": [70, 71, 72, 73, 74],
+            "eight": [90, 91, 92, 93, 94],
             "nine": [46, 47, 48, 49],
             "ten": [54, 55, 56],
             "eleven": [84, 85, 86, 87, 88, 89],
-            "twelve": [91, 92, 93, 94, 95, 96],
+            "twelve": [70, 71, 72, 73, 74, 75],
         ]
 
         let hourSuffixes: [String: [Int]] = [
-            "am": [106, 107],
-            "pm": [108, 109],
+            "am": [96, 97],
+            "pm": [98, 99],
         ]
 
         let hours: [Int: [Int]] = [
@@ -124,8 +124,7 @@ class Helper {
         return itis + minutes[roundedMinute]! + hours[roundedHour]!
     }
     
-//    static func getClockText(hour: Int, minute: Int) -> [Int] {
-//    }
+   
 }
 
 struct ContentView: View {
@@ -133,25 +132,22 @@ struct ContentView: View {
     @State private var minute = 0
     @State private var second = 0
 
-    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-
-    private var symbols = [
-        "I", "T", "P", "I", "S", "A", "H", "A", "L", "F",
+    private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    private var items: [GridItem] = Array(repeating: .init(.flexible()), count: 10)
+    
+    private var symbols: [String] = [
+        "I", "T", "•", "I", "S", "•", "H", "A", "L", "F",
         "T", "W", "E", "N", "T", "Y", "F", "I", "V", "E",
         "Q", "U", "A", "R", "T", "E", "R", "T", "E", "N",
-        "T", "O", "P", "A", "S", "T", "R", "S", "I", "X",
-        "S", "E", "V", "E", "N", "A", "N", "I", "N", "E",
-        "O", "N", "E", "D", "T", "E", "N", "T", "W", "O",
-        "T", "H", "R", "E", "E", "O", "F", "I", "V", "E",
-        "E", "I", "G", "H", "T", "A", "A", "M", "P", "M",
+        "T", "O", "P", "A", "S", "T", "•", "S", "I", "X",
+        "S", "E", "V", "E", "N", "•", "N", "I", "N", "E",
+        "O", "N", "E", "•", "T", "E", "N", "T", "W", "O",
+        "T", "H", "R", "E", "E", "E", "I", "G", "H", "T",
+        "T", "W", "E", "L", "V", "E", "F", "I", "V", "E",
         "F", "O", "U", "R", "E", "L", "E", "V", "E", "N",
-        "R", "T", "W", "E", "L", "V", "E", "M", "L", "C",
         "E", "I", "G", "H", "T", "•", "A", "M", "P", "M",
     ]
-
-
-
-    var items: [GridItem] = Array(repeating: .init(.flexible()), count: 10)
 
     var body: some View {
         ScrollView {
