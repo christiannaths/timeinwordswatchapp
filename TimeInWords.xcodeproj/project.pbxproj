@@ -15,6 +15,8 @@
 		D676B435277A4816009F20A8 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676B434277A4816009F20A8 /* ComplicationController.swift */; };
 		D676B437277A4817009F20A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D676B436277A4817009F20A8 /* Assets.xcassets */; };
 		D676B43A277A4817009F20A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D676B439277A4817009F20A8 /* Preview Assets.xcassets */; };
+		D676B455277B78E8009F20A8 /* ProfileView.example.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676B454277B78E8009F20A8 /* ProfileView.example.swift */; };
+		D676B45A277B791A009F20A8 /* ProfileViewModel.example.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676B459277B791A009F20A8 /* ProfileViewModel.example.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		D676B436277A4817009F20A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D676B439277A4817009F20A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D676B43B277A4817009F20A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D676B454277B78E8009F20A8 /* ProfileView.example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.example.swift; sourceTree = "<group>"; };
+		D676B459277B791A009F20A8 /* ProfileViewModel.example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.example.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				D676B430277A4816009F20A8 /* ContentView.swift */,
+				D676B454277B78E8009F20A8 /* ProfileView.example.swift */,
+				D676B459277B791A009F20A8 /* ProfileViewModel.example.swift */,
 				D676B432277A4816009F20A8 /* TimeInWordsApp.swift */,
 				D676B434277A4816009F20A8 /* ComplicationController.swift */,
 				D676B436277A4817009F20A8 /* Assets.xcassets */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D676B45A277B791A009F20A8 /* ProfileViewModel.example.swift in Sources */,
 				D676B431277A4816009F20A8 /* ContentView.swift in Sources */,
 				D676B433277A4816009F20A8 /* TimeInWordsApp.swift in Sources */,
+				D676B455277B78E8009F20A8 /* ProfileView.example.swift in Sources */,
 				D676B435277A4816009F20A8 /* ComplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

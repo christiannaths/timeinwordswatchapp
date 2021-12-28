@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct TimeInWordsApp: App {
+    
+    
+    
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
